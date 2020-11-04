@@ -38,7 +38,7 @@ p {
   border-radius: 8px;
   box-shadow: 0px 18px 8px 8px rgba(0, 0, 0, 0.2);
   display: grid;
-  grid-auto-rows: 1fr;
+  grid-template-rows: 1fr 2fr;
   height: 90%;
   max-height: 684px;
   max-width: 420px;
@@ -132,6 +132,14 @@ p {
   margin: 16px 0;
 }
 
+.form-actions a {
+  text-decoration: none;
+}
+
+.form-actions a:hover {
+  text-decoration: underline;
+}
+
 .checkbox-container {
   cursor: pointer;
   display: block;
@@ -185,11 +193,6 @@ p {
   height: 10px;
   transform: rotate(45deg);
   width: 5px;
-}
-
-.forgot-password {
-  text-decoration: none;
-  color: inherit;
 }
 
 .submit-section {

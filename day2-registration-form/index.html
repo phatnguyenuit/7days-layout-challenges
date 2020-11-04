@@ -15,11 +15,11 @@
       <div class="card-header gradient-background">
         <h4>Welcome to the website</h4>
         <p>Proident ex ex deserunt ea. Non esse elit ipsum dolor. Enim do enim fugiat id quis.</p>
-        <a href="../day2-registration-form">Create Account</a>
+        <a href="../day1-login-form">Have account already ? Login now!</a>
       </div>
       <div class="card-content">
         <form action="javascript:void(0)" method="POST" class="form-control">
-          <div class="form-title">user login</div>
+          <div class="form-title">registration</div>
           <div class="field-group">
             <div class="icon">
               <label for="username">
@@ -30,25 +30,37 @@
           </div>
           <div class="field-group">
             <div class="icon">
+              <label for="email">
+                <img src="./icons/email.svg" width="16" height="16" />
+              </label>
+            </div>
+            <input placeholder="Email" id="email" />
+          </div>
+          <div class="field-group">
+            <div class="icon">
               <label for="password">
                 <img src="./icons/padlock.svg" width="16" height="16" />
               </label>
             </div>
             <input placeholder="Password" id="password" />
           </div>
-          <div class="form-actions">
-            <div class="remember-section">
-              <label class="checkbox-container">Remember me
-                <input type="checkbox" />
-                <span class="check-mark"></span>
+          <div class="field-group">
+            <div class="icon">
+              <label for="confirm-password">
+                <img src="./icons/padlock.svg" width="16" height="16" />
               </label>
             </div>
-            <div class="forgot-password-section">
-              <a href="javascript:void(0)" class="forgot-password">Forgot password ?</a>
-            </div>
+            <input placeholder="Confirm password" id="confirm-password" />
+          </div>
+          <div class="form-actions">
+            <label class="checkbox-container">I agree with <a href="javascript:void(0)">term of use</a> and <a
+                href="javascript:void(0)">privacy</a>
+              <input type="checkbox" />
+              <span class="check-mark"></span>
+            </label>
           </div>
           <div class="submit-section">
-            <button>Login</button>
+            <button>submit</button>
           </div>
         </form>
       </div>
