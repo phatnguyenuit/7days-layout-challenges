@@ -23,12 +23,7 @@ body {
 
 .gradient-background {
   background: rgb(92, 58, 159);
-  background: linear-gradient(
-    90deg,
-    rgba(92, 58, 159, 1) 0%,
-    rgba(127, 42, 145, 1) 50%,
-    rgba(158, 0, 255, 1) 100%
-  );
+  background: linear-gradient( 90deg, rgba(92, 58, 159, 1) 0%, rgba(127, 42, 145, 1) 50%, rgba(158, 0, 255, 1) 100%);
 }
 
 .container {
@@ -45,8 +40,8 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   height: 90%;
-  max-width: 420px;
   max-height: 684px;
+  max-width: 420px;
   overflow: hidden;
   width: 50%;
 }
@@ -60,11 +55,11 @@ body {
   position: relative;
 }
 
-.card-header > h4 {
+.card-header>h4 {
   margin-bottom: 8px;
 }
 
-.card-header > a {
+.card-header>a {
   bottom: 16px;
   color: #ffffff;
   left: 16px;
@@ -86,7 +81,7 @@ body {
 }
 
 .form-title {
-  color: #6d2c92;
+  color: #9a3b99;
   font-size: 1.5rem;
   margin-bottom: 16px;
   text-align: center;
@@ -132,16 +127,59 @@ body {
   margin: 16px 0;
 }
 
-.remember-section {
-  display: flex;
-  align-items: center;
+.checkbox-container {
+  cursor: pointer;
+  display: block;
+  line-height: 24px;
+  padding-left: 32px;
+  position: relative;
+  user-select: none;
 }
 
-.remember-section > label {
-  margin-left: 8px;
+/* Hide the browser's default checkbox */
+
+.checkbox-container input {
+  cursor: pointer;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  width: 0;
 }
-.remember-section > input {
-  color: #9a3b99;
+
+/* Create the check mark/indicator (hidden when not checked) */
+
+.check-mark {
+  background-color: #9a3b99;
+  border-radius: 50%;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.check-mark:after {
+  content: "";
+  display: none;
+  left: 8px;
+  position: absolute;
+  top: 4px;
+}
+
+/* Show the check mark when checked */
+
+.checkbox-container input:checked~.check-mark:after {
+  display: block;
+}
+
+/* Style the check mark/indicator */
+
+.checkbox-container .check-mark:after {
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  height: 10px;
+  transform: rotate(45deg);
+  width: 5px;
 }
 
 .forgot-password {
@@ -153,11 +191,21 @@ body {
   text-align: center;
 }
 
-.submit-section > button {
+.submit-section>button {
   background-color: #9a3b99;
   border: none;
   color: #ffffff;
   outline: none;
   padding: 8px 16px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
