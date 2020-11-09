@@ -1,0 +1,180 @@
+@import './pure.css';
+
+.sidebar {
+  background-color: #3d4f5d;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin: 3em auto;
+}
+
+.brand-title,
+.brand-tagline {
+  margin: 0;
+}
+
+.brand-title {
+  text-transform: uppercase;
+}
+
+.brand-tagline {
+  font-weight: 300;
+  color: #b0cadb;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item>a {
+  background: transparent;
+  border: 2px solid rgb(176, 202, 219);
+  color: #fff;
+  margin-top: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 85%;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  border: 2px solid rgb(61, 146, 201);
+  text-decoration: none;
+}
+
+.content {
+  padding: 2em 1em 0;
+}
+
+.content-subhead {
+  border-bottom: 1px solid #eee;
+  color: #aaa;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 0.4em 0;
+  text-transform: uppercase;
+}
+
+.post {
+  padding-bottom: 2em;
+}
+
+.post-title {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+
+.post-avatar {
+  float: right;
+  margin-left: 1em;
+  width: 48px;
+  height: 48px;
+}
+
+.post-avatar>img {
+  border-radius: 50%;
+}
+
+.img-responsive {
+  width: 100%;
+  height: 100%;
+}
+
+.post-meta {
+  color: #999;
+  font-size: 90%;
+  margin: 0;
+}
+
+.post-category {
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #fff;
+  background: #999;
+  font-size: 80%;
+}
+
+.post-description {
+  font-family: Georgia, 'Cambria', serif;
+  color: #444;
+  line-height: 1.8em;
+}
+
+.post-category-css {
+  background-color: #5aba59;
+}
+
+.post-category-pure {
+  background: #4d85d1;
+}
+
+.post-category-js {
+  background: #df2d4f;
+}
+
+.post-category-yui {
+  background: #8156a7;
+}
+
+.post-images {
+  margin: 1em 0;
+}
+
+.post-image {
+  position: relative;
+}
+
+.post-image-meta {
+  bottom: 0;
+  color: #fff;
+  left: 1em;
+  position: absolute;
+  text-shadow: 0 1px 1px #333;
+}
+
+.footer {
+  padding: 1em 0;
+}
+
+.footer a {
+  color: #ccc;
+  font-size: 80%;
+}
+
+@media screen and (min-width: 48em) {
+  .sidebar {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 0 2em;
+    text-align: right;
+    margin: unset;
+  }
+
+  .content {
+    margin-left: 25%;
+    padding: 2em 3em 0;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
