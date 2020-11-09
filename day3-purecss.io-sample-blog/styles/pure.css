@@ -1,0 +1,280 @@
+@import './reset.css';
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.flex [class*='w'] {
+  font-family: sans-serif;
+}
+
+/* Supports layout 5 columns and 24 columns */
+.w-1,
+.w-1-1,
+.w-5-5,
+.w-24-24,
+.w-1-4,
+.w-6-24,
+.w-1-2,
+.w-2-24,
+.w-3-4,
+.w-18-24 {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+}
+
+.w-1,
+.w-1-1,
+.w-5-5,
+.w-24-24 {
+  width: 100%;
+}
+
+.w-1-4,
+.w-6-24 {
+  width: calc(1 / 4 * 100%);
+}
+
+.w-1-2,
+.w-2-24 {
+  width: calc(1 / 2 * 100%);
+}
+
+.w-3-4,
+.w-18-24 {
+  width: calc(3 / 4 * 100%);
+}
+
+@media screen and (max-width:480px) {}
+
+/* Default font size is 16px => 1em = 16px */
+/* Small - sm - >= 568px */
+@media screen and (min-width: 35.5em) {
+
+  .w-sm-1,
+  .w-sm-1-1,
+  .w-sm-5-5,
+  .w-sm-24-24,
+  .w-sm-1-4,
+  .w-sm-6-24,
+  .w-sm-1-2,
+  .w-sm-2-24,
+  .w-sm-3-4,
+  .w-sm-18-24 {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+  }
+
+  .w-sm-1,
+  .w-sm-1-1,
+  .w-sm-5-5,
+  .w-sm-24-24 {
+    width: 100%;
+  }
+
+  .w-sm-1-4,
+  .w-sm-6-24 {
+    width: calc(1 / 4 * 100%);
+  }
+
+  .w-sm-1-2,
+  .w-sm-2-24 {
+    width: calc(1 / 2 * 100%);
+  }
+
+  .w-sm-3-4,
+  .w-sm-18-24 {
+    width: calc(3 / 4 * 100%);
+  }
+}
+
+/* Medium - md - >= 768px */
+@media screen and (min-width: 48em) {
+
+  .w-md-1,
+  .w-md-1-1,
+  .w-md-5-5,
+  .w-md-24-24,
+  .w-md-1-4,
+  .w-md-6-24,
+  .w-md-1-2,
+  .w-md-2-24,
+  .w-md-3-4,
+  .w-md-18-24 {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+  }
+
+  .w-md-1,
+  .w-md-1-1,
+  .w-md-5-5,
+  .w-md-24-24 {
+    width: 100%;
+  }
+
+  .w-md-1-4,
+  .w-md-6-24 {
+    width: calc(1 / 4 * 100%);
+  }
+
+  .w-md-1-2,
+  .w-md-2-24 {
+    width: calc(1 / 2 * 100%);
+  }
+
+  .w-md-3-4,
+  .w-md-18-24 {
+    width: calc(3 / 4 * 100%);
+  }
+}
+
+/* Large - lg - >= 1024px */
+@media screen and (min-width: 64em) {
+
+  .w-lg-1,
+  .w-lg-1-1,
+  .w-lg-5-5,
+  .w-lg-24-24,
+  .w-lg-1-4,
+  .w-lg-6-24,
+  .w-lg-1-2,
+  .w-lg-2-24,
+  .w-lg-3-4,
+  .w-lg-18-24 {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+  }
+
+  .w-lg-1,
+  .w-lg-1-1,
+  .w-lg-5-5,
+  .w-lg-24-24 {
+    width: 100%;
+  }
+
+  .w-lg-1-4,
+  .w-lg-6-24 {
+    width: calc(1 / 4 * 100%);
+  }
+
+  .w-lg-1-2,
+  .w-lg-2-24 {
+    width: calc(1 / 2 * 100%);
+  }
+
+  .w-lg-3-4,
+  .w-lg-18-24 {
+    width: calc(3 / 4 * 100%);
+  }
+}
+
+/* Extra large - xl - >= 1280px */
+@media screen and (min-width: 80em) {
+
+  .w-xl-1,
+  .w-xl-1-1,
+  .w-xl-5-5,
+  .w-xl-24-24,
+  .w-xl-1-4,
+  .w-xl-6-24,
+  .w-xl-1-2,
+  .w-xl-2-24,
+  .w-xl-3-4,
+  .w-xl-18-24 {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+  }
+
+  .w-xl-1,
+  .w-xl-1-1,
+  .w-xl-5-5,
+  .w-xl-24-24 {
+    width: 100%;
+  }
+
+  .w-xl-1-4,
+  .w-xl-6-24 {
+    width: calc(1 / 4 * 100%);
+  }
+
+  .w-xl-1-2,
+  .w-xl-2-24 {
+    width: calc(1 / 2 * 100%);
+  }
+
+  .w-xl-3-4,
+  .w-xl-18-24 {
+    width: calc(3 / 4 * 100%);
+  }
+}
+
+.button {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0.5em 1em;
+  color: #000008;
+  border: none transparent;
+  background-color: #e6e6e6;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.button {
+  display: inline-block;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset,
+    0 0 6px rgba(0, 0, 0, 0.2) inset;
+  border-color: #000;
+}
+
+.menu {
+  box-sizing: border-box;
+}
+
+.menu-horizontal {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.menu-horizontal .menu-heading,
+.menu-horizontal .menu-item,
+.menu-horizontal .menu-separator {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-item {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.menu-item,
+.menu-list {
+  position: relative;
+}
+
+.menu-disabled,
+.menu-heading,
+.menu-link {
+  padding: 0.5em 1em;
+}

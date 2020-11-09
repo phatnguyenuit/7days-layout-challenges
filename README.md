@@ -8,6 +8,7 @@ I challenge myself with seven days of layout challenges. Implement them with HTM
   - [Table of Contents](#table-of-contents)
   - [Day 1 - Login form](#day-1---login-form)
   - [Day 2 - Registration form](#day-2---registration-form)
+  - [Day 3 - Sample blog](#day-3---sample-blog)
 
 ## [Day 1 - Login form](./day1-login-form/index.html)
 
@@ -26,5 +27,14 @@ Reference:
 
 - [Template](./day2-registration-form/template.png)
 - [Make CSS Gradient](https://cssgradient.io/)
+
+[&uarr; Back to top](#table-of-contents)
+
+## [Day 3 - Sample blog](./day3-purecss.io-sample-blog/index.html)
+
+![Result](./day3-purecss.io-sample-blog/actual-result.jpg)
+Reference:
+
+- [Template](https://purecss.io/layouts/blog/)
 
 [&uarr; Back to top](#table-of-contents)

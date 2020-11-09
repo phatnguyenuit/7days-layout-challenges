@@ -2,135 +2,162 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample blog</title>
-  <link type="text/css" rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Layout Examples - Pure</title>
+  <link type="text/css" rel="stylesheet" href="./styles/styles.css" />
 </head>
 
 <body>
-  <div class="container">
-    <div class="side-bar flex flex-col flex-center flex-justify-center">
-      <h1 class="uppercase">a sample blog</h1>
-      <p class="uppercase">Creating a blog layout using Pure</p>
-      <div class="button-group">
-        <button class="uppercase">pure</button>
-        <button class="uppercase">yui library</button>
+  <div id="layout" class="flex">
+    <div class="sidebar w-1-1 w-md-1-4">
+      <div class="header">
+        <h1 class="brand-title">A Sample Blog</h1>
+        <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="button" href="http://purecss.io">Pure</a>
+            </li>
+            <li class="nav-item">
+              <a class="button" href="http://yuilibrary.com">YUI</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-    <div class="content flex flex-col">
-      <div class="pinned-post">
-        <h1 class="content-subhead">Pinned Post</h1>
-        <div class="post">
-          <div class="post-header flex flex-center">
-            <div class="post-title">
-              <div class="title"><span>Introducing Pure</span></div>
-              <div class="description">
-                <span>By&nbsp;<a href="#">Tilo Mitra</a> under <span class="chip chip-green">CSS</span>&nbsp;<span
-                    class="chip chip-blue">Pure</span>
+    <div class="content w-1-1 w-md-3-4">
+      <div>
+        <div class="posts">
+          <h1 class="content-subhead">Pinned Posts</h1>
+          <section class="post">
+            <header class="post-header">
+              <div class="post-avatar">
+                <img class="img-responsive" src="./images/tilo-avatar.png" alt="Tilo Mitra's avatar" />
               </div>
+              <h2 class="post-title">Introducing Pure</h2>
+              <p class="post-meta">
+                By&nbsp;
+                <a href="#" class="post-author">Tilo Mitra</a>
+                &nbsp;under
+                <a href="#" class="post-category post-category-css">CSS</a>
+                <a href="#" class="post-category post-category-pure">Pure</a>
+              </p>
+            </header>
+            <div class="post-description">
+              <p>
+                Yesterday at CSSConf, we launched Pure – a new CSS library.
+                Phew! Here are the
+                <a href="https://speakerdeck.com/tilomitra/pure-bliss">slides from the presentation</a>. Although it
+                looks pretty minimalist, we’ve been working on
+                Pure for several months. After many iterations, we have
+                released Pure as a set of small, responsive, CSS modules that
+                you can use in every web project.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="posts">
+          <h1 class="content-subhead">Recent Posts</h1>
+          <section class="post">
+            <header class="post-header">
+              <div class="post-avatar">
+                <img class="img-responsive" src="./images/ericf-avatar.png" alt="Eric Ferraiuolo's avatar" />
+              </div>
+              <h2 class="post-title">Everything You Need to Know About Grunt</h2>
+              <p class="post-meta">
+                By&nbsp;
+                <a href="#" class="post-author">Eric Ferraiuolo</a>
+                &nbsp;under
+                <a href="#" class="post-category post-category-js">JavaScript</a>
+              </p>
+            </header>
+            <div class="post-description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="post-header">
+              <div class="post-avatar">
+                <img class="img-responsive" src="./images/reid-avatar.png" alt="Reid Burke's avatar" />
+              </div>
+              <h2 class="post-title">Photos from CSSConf and JSConf</h2>
+              <p class="post-meta">
+                By&nbsp;
+                <a href="#" class="post-author">Reid Burke</a>
+                &nbsp;under
+                <a href="#" class="post-category">Uncategorized</a>
+              </p>
+            </header>
+            <div class="post-description">
+              <div class="post-images flex">
+                <div class="post-image w-1-2">
+                  <a href="http://www.flickr.com/photos/uberlife/8915936174/">
+                    <img class="img-responsive" alt="Photo of someone working poolside at a resort"
+                      class="pure-img-responsive" src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
+                  </a>
+                  <div class="post-image-meta">
+                    <h3>CSSConf Photos</h3>
+                  </div>
+                </div>
+                <div class="post-image w-1-2">
+                  <a href="http://www.flickr.com/photos/uberlife/8907351301/">
+                    <img class="img-responsive" alt="Photo of the sunset on the beach" class="pure-img-responsive"
+                      src="http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg">
+                  </a>
+                  <div class="post-image-meta">
+                    <h3>JSConf Photos</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="post">
+            <header class="post-header">
+              <div class="post-avatar">
+                <img src="./images/andrew-avatar.png" alt="Andrew Wooldridge's avatar" class="img-responsive" />
+              </div>
+              <h2 class="post-title">YUI 3.10.2 Released</h2>
+              <p class="post-meta">
+                By&nbsp;
+                <a href="#" class="post-author">Andrew Wooldridge</a>
+                &nbsp;under
+                <a href="#" class="post-category post-category-yui">YUI</a>
+              </p>
+            </header>
+            <div class="post-description">
+              <p>
+                We are happy to announce the release of YUI 3.10.2! You can find it now on the Yahoo! CDN, download it
+                directly, or pull it in via npm. We’ve also updated the YUI Library website with the latest
+                documentation.
 
+              </p>
             </div>
-            <div class="flex-grow"></div>
-            <div class="post-avatar">
-              <img src="./images/tilo-avatar.png" class="round-img avatar" />
-            </div>
-          </div>
-          <div class="post-summary">
-            <p>Yesterday at CSSConf, we launched Pure – a new CSS library. Phew! Here are the <a
-                href="https://speakerdeck.com/tilomitra/pure-bliss">slides from the
-                presentation</a>. Although it looks pretty minimalist, we’ve been working on Pure for several months.
-              After
-              many iterations, we have released Pure as a set of small, responsive, CSS modules that you can use in
-              every web project.</p>
+          </section>
+        </div>
+        <div class="footer">
+          <div class="menu menu-horizontal">
+            <ul>
+              <li class="menu-item">
+                <a href="http://purecss.io/" class="menu-link">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="http://twitter.com/yuilibrary/" class="menu-link">Twitter</a>
+              </li>
+              <li class="menu-item">
+                <a href="http://github.com/pure-css/pure/" class="menu-link">GitHub</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="recent-posts">
-        <p>RECENT POSTS</p>
-        <hr />
-        <div class="post">
-          <div class="post-header flex flex-center">
-            <div class="post-title">
-              <div class="title"><span>Everything You Need to Know About Grunt</span></div>
-              <div class="description">
-                <span>By&nbsp;<a href="#">Eric Ferraiuolo</a> under <span class="chip chip-red">JavaScript</span>
-              </div>
-
-            </div>
-            <div class="flex-grow"></div>
-            <div class="post-avatar">
-              <img src="./images/ericf-avatar.png" class="round-img avatar" />
-            </div>
-          </div>
-          <div class="post-summary">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur.</p>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header flex flex-center">
-            <div class="post-title">
-              <div class="title"><span>Photos from CSSConf and JSConf</span></div>
-              <div class="description">
-                <span>By&nbsp;<a href="#">Reid Burke</a> under <span class="chip chip-grey">Uncategorized</span>
-              </div>
-
-            </div>
-            <div class="flex-grow"></div>
-            <div class="post-avatar">
-              <img src="./images/reid-avatar.png" class="round-img avatar" />
-            </div>
-          </div>
-          <div class="post-summary">
-            <div class="flex flex-row">
-              <div class="sm-1 md-1-2">
-                <a href="https://www.flickr.com/photos/uberlife/8915936174/">
-                  <img class="img-responsive" src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg" />
-                </a>
-                <p>CSSConf Photos</p>
-              </div>
-              <div class="sm-1 md-1-2">
-                <a href="https://www.flickr.com/photos/uberlife/8907351301">
-                  <img class="img-responsive" src="http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg" />
-                </a>
-                <p>JSConf Photos</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-header flex flex-center">
-            <div class="post-title">
-              <div class="title"><span>YUI 3.10.2 Released</span></div>
-              <div class="description">
-                <span>By&nbsp;<a href="#">Andrew Wooldridge</a> under <span class="chip chip-purple">YUI</span>
-              </div>
-
-            </div>
-            <div class="flex-grow"></div>
-            <div class="post-avatar">
-              <img src="./images/andrew-avatar.png" class="round-img avatar" />
-            </div>
-          </div>
-          <div class="post-summary">
-            <p>We are happy to announce the release of YUI 3.10.2! You can find it now on the Yahoo! CDN, download it
-              directly, or pull it in via npm. We’ve also updated the YUI Library website with the latest documentation.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flex-grow"></div>
-      <div class="footer flex">
-        <a href="#">About</a>
-        <a href="#">Twitter</a>
-        <a href="#">GitHub</a>
       </div>
     </div>
   </div>
-
 </body>
 
 </html>
