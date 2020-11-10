@@ -9,6 +9,7 @@ I challenge myself with seven days of layout challenges. Implement them with HTM
   - [Day 1 - Login form](#day-1---login-form)
   - [Day 2 - Registration form](#day-2---registration-form)
   - [Day 3 - Sample blog](#day-3---sample-blog)
+  - [Day 4 - Photo Gallery](#day-4---photo-gallery)
 
 ## [Day 1 - Login form](./day1-login-form/index.html)
 
@@ -36,5 +37,14 @@ Reference:
 Reference:
 
 - [Template](https://purecss.io/layouts/blog/)
+
+[&uarr; Back to top](#table-of-contents)
+
+## [Day 4 - Photo Gallery](./day4-purecss.io-photo-gallery/index.html)
+
+![Result](./day4-purecss.io-photo-gallery/actual-result.png)
+Reference:
+
+- [Template](https://purecss.io/layouts/gallery/)
 
 [&uarr; Back to top](#table-of-contents)
