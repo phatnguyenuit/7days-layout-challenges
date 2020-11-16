@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Side menu</title>
-  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <link rel="stylesheet" type="text/css" href="./test.css" />
 </head>
 
 <body>
   <div id="layout">
-    <input type="checkbox" id="menu-checkbox" />
-    <label class="toggle-menu" for="menu-checkbox">Toggle</label>
-    <div class="side-menu">
+    <a href="#menu" id="menuLink" class="menu-link">
+      <span></span>
+    </a>
+    <div id="menu" class="side-menu">
       <h3 class="title">Company</h3>
       <ul class="menu">
         <li class="menu__item">
@@ -30,8 +31,10 @@
         <h1>Page Title</h1>
         <h2>A subtitle for your page goes here</h2>
       </div>
+      <div style="height: 100vh;">ok fine</div>
     </div>
   </div>
+  <script src="./menu.js"></script>
 </body>
 
 </html>
