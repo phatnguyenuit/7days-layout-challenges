@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   color: #777;
 }
@@ -75,7 +79,7 @@ The content `<div>` is where all your content goes.
 }
 
 /*
-The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+The `#menu` `<div>` is the parent `<div>` that contains the `.menu` that
 appears on the left side of the page.
 */
 
@@ -101,61 +105,7 @@ appears on the left side of the page.
   color: #999;
   border: none;
   padding: 0.6em 0 0.6em 0.6em;
-}
-
-/*
-  Remove all background/borders, since we are applying them to #menu.
-*/
-
-#menu .pure-menu,
-#menu .pure-menu ul {
-  border: none;
-  background: transparent;
-}
-
-/*
-  Add that light border to separate items into groups.
-*/
-
-#menu .pure-menu ul,
-#menu .pure-menu .menu-item-divided {
-  border-top: 1px solid #333;
-}
-
-/*
-  Change color of the anchor links on hover/focus.
-*/
-
-#menu .pure-menu li a:hover,
-#menu .pure-menu li a:focus {
-  background: #333;
-}
-
-/*
-  This styles the selected menu item `<li>`.
-*/
-
-#menu .pure-menu-selected,
-#menu .pure-menu-heading {
-  background: #1f8dd6;
-}
-
-/*
-  This styles a link within a selected menu item `<li>`.
-*/
-
-#menu .pure-menu-selected a {
-  color: #fff;
-}
-
-/*
-  This styles the menu heading.
-*/
-
-#menu .pure-menu-heading {
-  font-size: 110%;
-  color: #fff;
-  margin: 0;
+  text-decoration: none;
 }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
@@ -225,6 +175,42 @@ small screens.
 .img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+#menu>.menu-heading {
+  font-size: 110%;
+  margin: 0;
+  display: block;
+  text-transform: uppercase;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+.menu-item-link {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#menu .menu-heading,
+#menu .menu-selected a {
+  color: #fff;
+  background: #1f8dd6;
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+  background: #333;
 }
 
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
