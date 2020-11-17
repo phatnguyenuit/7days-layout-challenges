@@ -15,6 +15,7 @@ I challenge myself with seven days of layout challenges. Implement them with HTM
 ## [Day 1 - Login form](./day1-login-form/index.html)
 
 ![Result](./day1-login-form/actual-result.png)
+
 Reference:
 
 - [Template](https://speckyboy.com/creative-login-registration)
@@ -25,6 +26,7 @@ Reference:
 ## [Day 2 - Registration form](./day2-registration-form/index.html)
 
 ![Result](./day2-registration-form/actual-result.png)
+
 Reference:
 
 - [Template](./day2-registration-form/template.png)
@@ -35,6 +37,7 @@ Reference:
 ## [Day 3 - Sample blog](./day3-purecss.io-sample-blog/index.html)
 
 ![Result](./day3-purecss.io-sample-blog/actual-result.jpg)
+
 Reference:
 
 - [Template](https://purecss.io/layouts/blog/)
@@ -44,6 +47,7 @@ Reference:
 ## [Day 4 - Photo Gallery](./day4-purecss.io-photo-gallery/index.html)
 
 ![Result](./day4-purecss.io-photo-gallery/actual-result.png)
+
 Reference:
 
 - [Template](https://purecss.io/layouts/gallery/)
@@ -53,6 +57,7 @@ Reference:
 ## [Day 5 - Side Menu](./day5-purecss.io-side-menu/index.html)
 
 ![Result](./day5-purecss.io-side-menu/actual-result.png)
+
 Reference:
 
 - [Template](https://purecss.io/layouts/side-menu/)
