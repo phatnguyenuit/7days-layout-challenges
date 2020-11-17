@@ -11,6 +11,7 @@ I challenge myself with seven days of layout challenges. Implement them with HTM
   - [Day 3 - Sample blog](#day-3---sample-blog)
   - [Day 4 - Photo Gallery](#day-4---photo-gallery)
   - [Day 5 - Side Menu](#day-5---side-menu)
+  - [Day 6 - Landing Page](#day-6---landing-page)
 
 ## [Day 1 - Login form](./day1-login-form/index.html)
 
@@ -61,5 +62,15 @@ Reference:
 Reference:
 
 - [Template](https://purecss.io/layouts/side-menu/)
+
+[&uarr; Back to top](#table-of-contents)
+
+## [Day 6 - Landing Page](./day6-purecss.io-landing-page/index.html)
+
+![Result](./day6-purecss.io-landing-page/template.png)
+
+Reference:
+
+- [Template](https://purecss.io/layouts/marketing/)
 
 [&uarr; Back to top](#table-of-contents)
