@@ -2,16 +2,13 @@ body {
   color: #777;
 }
 
-.pure-img-responsive {
-  max-width: 100%;
-  height: auto;
-}
-
 /*
 Add transition to containers so they can push in and out.
 */
 
-#layout, #menu, .menu-link {
+#layout,
+#menu,
+.menu-link {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
@@ -110,7 +107,8 @@ appears on the left side of the page.
   Remove all background/borders, since we are applying them to #menu.
 */
 
-#menu .pure-menu, #menu .pure-menu ul {
+#menu .pure-menu,
+#menu .pure-menu ul {
   border: none;
   background: transparent;
 }
@@ -119,7 +117,8 @@ appears on the left side of the page.
   Add that light border to separate items into groups.
 */
 
-#menu .pure-menu ul, #menu .pure-menu .menu-item-divided {
+#menu .pure-menu ul,
+#menu .pure-menu .menu-item-divided {
   border-top: 1px solid #333;
 }
 
@@ -127,7 +126,8 @@ appears on the left side of the page.
   Change color of the anchor links on hover/focus.
 */
 
-#menu .pure-menu li a:hover, #menu .pure-menu li a:focus {
+#menu .pure-menu li a:hover,
+#menu .pure-menu li a:focus {
   background: #333;
 }
 
@@ -135,7 +135,8 @@ appears on the left side of the page.
   This styles the selected menu item `<li>`.
 */
 
-#menu .pure-menu-selected, #menu .pure-menu-heading {
+#menu .pure-menu-selected,
+#menu .pure-menu-heading {
   background: #1f8dd6;
 }
 
@@ -186,7 +187,8 @@ small screens.
   padding: 2.1em 1.6em;
 }
 
-.menu-link:hover, .menu-link:focus {
+.menu-link:hover,
+.menu-link:focus {
   background: #000;
 }
 
@@ -196,13 +198,16 @@ small screens.
   display: block;
 }
 
-.menu-link span, .menu-link span:before, .menu-link span:after {
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
   background-color: #fff;
   width: 100%;
   height: 0.2em;
 }
 
-.menu-link span:before, .menu-link span:after {
+.menu-link span:before,
+.menu-link span:after {
   position: absolute;
   margin-top: -0.6em;
   content: " ";
@@ -212,6 +217,16 @@ small screens.
   margin-top: 0.6em;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 
 /*
@@ -219,29 +234,36 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 */
 
 @media (min-width: 48em) {
-  .header, .content {
+
+  .header,
+  .content {
     padding-left: 2em;
     padding-right: 2em;
   }
+
   #layout {
     padding-left: 150px;
     /* left col width "#menu" */
     left: 0;
   }
+
   #menu {
     left: 150px;
   }
+
   .menu-link {
     position: fixed;
     left: 150px;
     display: none;
   }
+
   #layout.active .menu-link {
     left: 150px;
   }
 }
 
 @media (max-width: 48em) {
+
   /* Only apply this when the window is small. Otherwise, the following
   case results in extra padding on the left:
       * Make the window small.
