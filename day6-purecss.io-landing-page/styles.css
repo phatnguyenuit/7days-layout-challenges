@@ -131,10 +131,8 @@ body {
   padding: 1em;
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-  gap: 24px;
+.features>section {
+  padding: 8px;
 }
 
 .features>section>header>h3 {
@@ -143,13 +141,11 @@ body {
 
 .section-3 {
   background-color: #2d3e50;
-  display: grid;
-  grid-template-columns: 2fr 3fr;
   padding: 2em;
+  align-items: center;
 }
 
 .image-box {
-  padding: 2em;
   text-align: center;
 }
 
@@ -164,10 +160,6 @@ body {
   letter-spacing: 0.1em;
   margin: 2em 0 1em;
   color: #fff;
-}
-
-.sign-up-form {
-  display: flex;
 }
 
 .footer {
